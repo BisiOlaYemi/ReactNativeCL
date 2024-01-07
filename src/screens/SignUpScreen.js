@@ -23,10 +23,10 @@ const SignUpScreen = ({ navigation }) => {
         secureTextEntry 
         
       />
-      <TouchableOpacity style={signUpStyles.button} onPress={() => navigation.navigate('ready')}>
+      <TouchableOpacity style={signUpStyles.button} onPress={() => navigation.navigate('SignIn')}>
         <Text style={signUpStyles.buttonText}>Sign Up</Text>
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('SignIn')}>
         <Text style={signUpStyles.linkText}>Already have an account? Sign In</Text>
       </TouchableOpacity>
     </View>
