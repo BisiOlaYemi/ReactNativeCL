@@ -2,8 +2,11 @@ import React from 'react';
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 import { commonStyles } from '../styles/commonStyles';
 import { signInStyles } from '../styles/signInStyles';
+import { useNavigation } from '@react-navigation/native';
 
 const SignInScreen = () => {
+  const navigation = useNavigation();
+
   return (
     <View style={commonStyles.container}>
       <Text style={signInStyles.title}>Sign In</Text>
@@ -18,7 +21,7 @@ const SignInScreen = () => {
         secureTextEntry // For hiding password
         // Add onChangeText handler
       />
-      <TouchableOpacity style={signInStyles.button} onPress={() => router.push('Account')}>
+      <TouchableOpacity style={signInStyles.button} onPress={() => navigation.navigate('Home')}>
         <Text style={signInStyles.buttonText}>Sign In</Text>
       </TouchableOpacity>
       <TouchableOpacity>
