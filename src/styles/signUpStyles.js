@@ -20,7 +20,7 @@ export const signUpStyles = StyleSheet.create({
     backgroundColor: 'blue', 
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 18,
+    borderRadius: 8,
     marginBottom: 10,
   },
   buttonText: {
