@@ -15,7 +15,7 @@ export const signInStyles = StyleSheet.create({
     marginBottom: 15,
   },
   button: {
-    width: '100%',
+    width: '50%',
     height: 50,
     backgroundColor: 'blue',
     justifyContent: 'center',
