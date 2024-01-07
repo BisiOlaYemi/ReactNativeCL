@@ -8,7 +8,7 @@ const WelcomeScreen = ({ navigation }) => {
     <View style={commonStyles.container}>
       <Text style={welcomeStyles.title}>Welcome!</Text>
       <TouchableOpacity style={welcomeStyles.button} onPress={() => navigation.navigate('SignUp')}>
-        <Text style={welcomeStyles.buttonText}>Let's get Started</Text>
+        <Text style={welcomeStyles.buttonText}>Get Started</Text>
       </TouchableOpacity>
     </View>
   );
