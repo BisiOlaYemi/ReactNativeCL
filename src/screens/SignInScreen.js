@@ -13,19 +13,19 @@ const SignInScreen = () => {
       <TextInput
         style={signInStyles.input}
         placeholder="Email"
-        // Add onChangeText handler
+        
       />
       <TextInput
         style={signInStyles.input}
         placeholder="Password"
-        secureTextEntry // For hiding password
-        // Add onChangeText handler
+        secureTextEntry 
+        
       />
       <TouchableOpacity style={signInStyles.button} onPress={() => navigation.navigate('Home')}>
         <Text style={signInStyles.buttonText}>Sign In</Text>
       </TouchableOpacity>
       <TouchableOpacity>
-        <Text style={signInStyles.linkText}>Don't have an account? Sign Up</Text>
+        <Text style={signInStyles.linkText} onPress={() => navigation.navigate('SignUp')}>Don't have an account? Sign Up</Text>
       </TouchableOpacity>
     </View>
   );
