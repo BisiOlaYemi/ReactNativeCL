@@ -39,7 +39,7 @@ const SignInScreen = () => {
         <Text style={signInStyles.buttonText}>Sign In</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
-        <Text style={signInStyles.linkText}>Don't have an account? Sign Up</Text>
+        <Text style={signInStyles.linkText}>Don't have an account yet? Sign Up</Text>
       </TouchableOpacity>
     </View>
   );
